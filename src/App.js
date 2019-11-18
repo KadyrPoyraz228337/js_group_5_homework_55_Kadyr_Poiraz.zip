@@ -1,11 +1,20 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
+import Ingredients from "./Components/ingrediients";
+import Burger from "./Components/burger";
+import "./App.css";
 
 class App extends Component {
     render() {
         return (
-            <div>
-              
-            </div>
+            <Fragment>
+                <div className="burgerAppHeader">
+                    <h1>my burger app</h1>
+                </div>
+                <div className="burgerAppBlock">
+                    <Ingredients/>
+                    <Burger/>
+                </div>
+            </Fragment>
         );
     }
 }

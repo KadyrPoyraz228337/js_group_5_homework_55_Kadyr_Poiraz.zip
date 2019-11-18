@@ -1,11 +1,12 @@
 import React from 'react';
+import "./style.css";
 
-const burger = () => {
+const Burger = () => {
     return (
-        <div>
+        <div className="burgerBlock">
             
         </div>
     );
 };
 
-export default burger;
+export default Burger;

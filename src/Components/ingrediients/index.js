@@ -1,8 +1,9 @@
 import React from 'react';
+import "./style.css"
 
 const Ingredients = () => {
     return (
-        <div>
+        <div className="ingredientsBlock">
             
         </div>
     );
