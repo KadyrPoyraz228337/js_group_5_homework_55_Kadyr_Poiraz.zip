@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.css"
 import Ingredient from "../ingredienr";
 
-const Ingredients = ({ingredientsInfo}) => {
+const Ingredients = ({ingredientsInfo, onClick}) => {
     return (
         <div className="ingredientsBlock">
             {ingredientsInfo.map(ingr => (
@@ -10,6 +10,7 @@ const Ingredients = ({ingredientsInfo}) => {
                     key={ingr.name}
                     ingredientTitle={ingr.name}
                     ingredientCount={ingr.count}
+                    onClick={() => onClick(ingr.name)}
                 />
             ))}
         </div>

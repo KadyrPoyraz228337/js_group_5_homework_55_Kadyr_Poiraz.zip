@@ -27,6 +27,7 @@ class App extends Component {
                 <div className="burgerAppBlock">
                     <Ingredients
                         ingredientsInfo={this.state.ingredients}
+                        onClick={this.addCount}
                     />
                     <Burger/>
                 </div>
