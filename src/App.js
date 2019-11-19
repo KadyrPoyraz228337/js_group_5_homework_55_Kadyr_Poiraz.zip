@@ -45,6 +45,18 @@ class App extends Component {
         ingredients[index] = ingredient;
 
         this.setState({ingredients});
+    };
+
+    subtractOneUnitFromTheCounter = name => {
+        const ingredients = [...this.state.ingredients];
+        const index = ingredients.findIndex(elem => elem.name === name);
+        const ingredient = ingredients[index];
+
+        ingredient.count--;
+
+        ingredients[index] = ingredient;
+
+        this.setState({ingredients});
     }
 
 }
