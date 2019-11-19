@@ -6,7 +6,6 @@ import Salad from "../Salad";
 import Bacon from "../Bacon";
 
 const Burger = ({ingredients}) => {
-    console.log(ingredients);
     return (
         <div className="burgerBlock">
             <div className="BreadTop">
