@@ -86,14 +86,6 @@
     box-shadow: inset 1px 3px #c9c9c9;
 }
 
-.Cheese {
-    width: 90%;
-    height: 4.5%;
-    margin: 2% auto;
-    background: linear-gradient(#f4d004, #d6bb22);
-    border-radius: 20px;
-}
-
 .Salad {
     width: 85%;
     height: 7%;

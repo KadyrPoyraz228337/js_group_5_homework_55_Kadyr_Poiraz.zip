@@ -33,7 +33,9 @@ class App extends Component {
                         deleteOneUnit={this.subtractOneUnitFromTheCounter}
                         ingredients={ingredients}
                     />
-                    <Burger/>
+                    <Burger
+                        ingredients={this.state.ingredients}
+                    />
                 </div>
             </Fragment>
         );
