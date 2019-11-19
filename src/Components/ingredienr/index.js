@@ -9,7 +9,7 @@ const Ingredient = ({onClick, ingredientTitle, ingredientCount}) => {
                 <h5 className="ingredientTitle">{ingredientTitle}</h5>
             </a>
             <p className="ingredientCount">x{ingredientCount}</p>
-            {ingredientCount > 0 && <button onClick={onClick} className="ingredientBtn"> Удалить </button>}
+            {ingredientCount > 0 && <button className="ingredientBtn"> Удалить </button>}
         </div>
     );
 };
