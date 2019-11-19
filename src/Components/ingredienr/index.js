@@ -1,7 +1,7 @@
 import React from 'react';
 import "./style.css";
 
-const Ingredient = ({onClick, ingredientTitle, ingredientCount}) => {
+const Ingredient = ({ deleteOneUnit, onClick, ingredientTitle, ingredientCount}) => {
     return (
         <div className="ingredientListItem">
             <a href="#" className="ingredientAdd" onClick={onClick} >
@@ -9,7 +9,7 @@ const Ingredient = ({onClick, ingredientTitle, ingredientCount}) => {
                 <h5 className="ingredientTitle">{ingredientTitle}</h5>
             </a>
             <p className="ingredientCount">x{ingredientCount}</p>
-            {ingredientCount > 0 && <button className="ingredientBtn"> Удалить </button>}
+            {ingredientCount > 0 && <button onClick={deleteOneUnit} className="ingredientBtn"> Удалить </button>}
         </div>
     );
 };

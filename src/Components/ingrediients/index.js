@@ -2,7 +2,7 @@ import React from 'react';
 import "./style.css"
 import Ingredient from "../ingredienr";
 
-const Ingredients = ({ingredientsInfo, onClick}) => {
+const Ingredients = ({ingredientsInfo, onClick, deleteOneUnit}) => {
     return (
         <div className="ingredientsBlock">
             {ingredientsInfo.map(ingr => (
@@ -11,6 +11,7 @@ const Ingredients = ({ingredientsInfo, onClick}) => {
                     ingredientTitle={ingr.name}
                     ingredientCount={ingr.count}
                     onClick={() => onClick(ingr.name)}
+                    deleteOneUnit={() => deleteOneUnit(ingr.name)}
                 />
             ))}
         </div>
