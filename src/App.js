@@ -15,6 +15,8 @@ class App extends Component {
     ingredients: [
         {name: 'Meat', count: 0},
         {name: 'Cheese', count: 0},
+        {name: 'Salad', count: 0},
+        {name: 'Bacon', count: 0},
     ]
   };
 
