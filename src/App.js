@@ -31,6 +31,7 @@ class App extends Component {
                         ingredientsInfo={this.state.ingredients}
                         onClick={this.addCount}
                         deleteOneUnit={this.subtractOneUnitFromTheCounter}
+                        ingredients={ingredients}
                     />
                     <Burger/>
                 </div>
