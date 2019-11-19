@@ -6,7 +6,7 @@ import "./App.css";
 const ingredients = [
     {name: 'Meat', price: 50, image: 'http://pngimg.com/uploads/cutlet/cutlet_PNG103.png'},
     {name: 'Cheese', price: 20, image: 'https://pngicon.ru/file/uploads/cheese.png'},
-    {name: 'Salad', price: 5, image: 'https://img.lovepik.com/element/40069/4203.png_860.png'},
+    {name: 'Salad', price: 5, image: 'http://pngimg.com/uploads/salad/salad_PNG2809.png'},
     {name: 'Bacon', price: 30, image: 'https://storage.delikateska.ru/cache/7/5/fde114cc-f0b0-401f-b3da-d6ca04dfe015.png/w400h300.png'},
 ];
 
