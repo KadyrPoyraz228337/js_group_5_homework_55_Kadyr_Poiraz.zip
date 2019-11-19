@@ -4,7 +4,7 @@ import "./style.css";
 const Ingredient = ({ deleteOneUnit, onClick, ingredientTitle, ingredientCount}) => {
     return (
         <div className="ingredientListItem">
-            <a href="#" className="ingredientAdd" onClick={onClick} >
+            <a href="#" className="ingredientAdd" onClick={onClick} title="Нажмите на ингредиент, чтобы добавить его в бургер" >
                 <img src="#" alt="#" className="ingredientImg" />
                 <h5 className="ingredientTitle">{ingredientTitle}</h5>
             </a>
