@@ -11,14 +11,17 @@ const ingredients = [
 ];
 
 class App extends Component {
-  state = {
-    ingredients: [
-        {name: 'Meat', count: 0},
-        {name: 'Cheese', count: 0},
-        {name: 'Salad', count: 0},
-        {name: 'Bacon', count: 0},
-    ]
-  };
+  constructor(props) {
+      super(props);
+      this.state = {
+          ingredients: [
+              {name: 'Meat', count: 0},
+              {name: 'Cheese', count: 0},
+              {name: 'Salad', count: 0},
+              {name: 'Bacon', count: 0},
+          ]
+      };
+  }
 
     render() {
         return (
