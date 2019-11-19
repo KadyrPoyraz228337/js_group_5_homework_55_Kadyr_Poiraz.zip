@@ -34,6 +34,18 @@ class App extends Component {
         );
     }
 
+    addCount = name => {
+        const ingredients = [...this.state.ingredients];
+        const index = ingredients.findIndex(elem => elem.name === name);
+        const ingredient = ingredients[index];
+
+        ingredient.count++;
+
+        ingredients[index] = ingredient;
+
+        this.setState({ingredients});
+    }
+
 }
 
 export default App;
