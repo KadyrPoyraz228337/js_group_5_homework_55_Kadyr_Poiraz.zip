@@ -1,10 +1,14 @@
 import React from 'react';
 import "./style.css";
 
-const BurgerCounter = () => {
+const BurgerCounter = ({ingredients, ingredientsInfo}) => {
+    let counter = 0;
+    ingredients.map((ingr, index) => {
+        counter += ingr.count * ingredientsInfo[index].price
+    });
     return (
-        <div>
-
+        <div className="burgerCounter">
+            <h5>price: {counter}</h5>
         </div>
     );
 };

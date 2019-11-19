@@ -5,6 +5,9 @@ import Ingredient from "../ingredienr";
 const Ingredients = ({ingredientsInfo, onClick, deleteOneUnit, ingredients}) => {
     return (
         <div className="ingredientsBlock">
+            <div className="ingredientsBlockHeader">
+                <h5>Ingredients</h5>
+            </div>
             {ingredientsInfo.map((ingr, index) => (
                 <Ingredient
                     key={ingr.name}

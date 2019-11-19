@@ -1,7 +1,18 @@
 .burgerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 45%;
     height: 600px;
-    border: 1px solid #000;
+    background: #eeee;
+    border: 2px solid #000;
+}
+
+.burgerBlockHeader {
+    text-transform: uppercase;
+    text-align: center;
+    background: #f0dc4e;
+    border-bottom: 2px solid #000;
 }
 
 .BreadBottom {

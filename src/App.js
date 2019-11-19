@@ -35,6 +35,7 @@ class App extends Component {
                     />
                     <Burger
                         ingredients={this.state.ingredients}
+                        ingredientsInfo={ingredients}
                     />
                 </div>
             </Fragment>

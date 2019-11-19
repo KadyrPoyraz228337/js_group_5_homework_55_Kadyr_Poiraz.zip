@@ -4,39 +4,49 @@ import Meat from "../meat";
 import Cheese from "../Cheese";
 import Salad from "../Salad";
 import Bacon from "../Bacon";
+import BurgerCounter from "../BurgerCounter";
 
-const Burger = ({ingredients}) => {
+const Burger = ({ingredients, ingredientsInfo}) => {
     return (
         <div className="burgerBlock">
-            <div className="BreadTop">
-                <div className="Seeds1"></div>
-                <div className="Seeds2"></div>
+            <div className="burgerBlockHeader">
+                <h4 className="burgerBlockHeaderTitle">Burger</h4>
             </div>
-            {ingredients.map(ing => {
-                const arr = [];
-                if (ing.name === 'Cheese') {
-                    for(let i = 0; i < ing.count; i++) {
-                        arr.push(<Cheese/>)
+            <BurgerCounter
+                ingredients={ingredients}
+                ingredientsInfo={ingredientsInfo}
+            />
+            <div className="Burger">
+                <div className="BreadTop">
+                    <div className="Seeds1"></div>
+                    <div className="Seeds2"></div>
+                </div>
+                {ingredients.map(ing => {
+                    const arr = [];
+                    if (ing.name === 'Cheese') {
+                        for(let i = 0; i < ing.count; i++) {
+                            arr.push(<Cheese/>)
+                        }
                     }
-                }
-                if(ing.name === 'Meat') {
-                    for(let i = 0; i < ing.count; i++) {
-                        arr.push(<Meat/>)
+                    if(ing.name === 'Meat') {
+                        for(let i = 0; i < ing.count; i++) {
+                            arr.push(<Meat/>)
+                        }
                     }
-                }
-                if (ing.name === 'Salad') {
-                    for(let i = 0; i < ing.count; i++) {
-                        arr.push(<Salad/>)
+                    if (ing.name === 'Salad') {
+                        for(let i = 0; i < ing.count; i++) {
+                            arr.push(<Salad/>)
+                        }
                     }
-                }
-                if (ing.name === 'Bacon') {
-                    for(let i = 0; i < ing.count; i++) {
-                        arr.push(<Bacon/>)
+                    if (ing.name === 'Bacon') {
+                        for(let i = 0; i < ing.count; i++) {
+                            arr.push(<Bacon/>)
+                        }
                     }
-                }
-                return arr;
-            })}
-            <div className="BreadBottom"></div>
+                    return arr;
+                })}
+                <div className="BreadBottom"></div>
+            </div>
         </div>
     );
 };
