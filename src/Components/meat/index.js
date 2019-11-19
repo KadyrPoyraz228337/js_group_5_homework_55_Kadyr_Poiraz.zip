@@ -3,9 +3,7 @@ import "./style.css";
 
 const Meat = () => {
     return (
-        <div>
-            
-        </div>
+        <div className="Meat"></div>
     );
 };
 
