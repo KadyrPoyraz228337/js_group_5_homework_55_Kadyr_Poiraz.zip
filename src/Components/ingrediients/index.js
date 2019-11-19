@@ -3,7 +3,6 @@ import "./style.css"
 import Ingredient from "../ingredienr";
 
 const Ingredients = ({ingredientsInfo, onClick, deleteOneUnit, ingredients}) => {
-    console.log(ingredients);
     return (
         <div className="ingredientsBlock">
             {ingredientsInfo.map((ingr, index) => (

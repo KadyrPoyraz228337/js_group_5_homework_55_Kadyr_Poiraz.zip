@@ -24,7 +24,7 @@ class App extends Component {
         return (
             <Fragment>
                 <div className="burgerAppHeader">
-                    <h1>my burger app</h1>
+                    <h1>my buter app</h1>
                 </div>
                 <div className="burgerAppBlock">
                     <Ingredients
