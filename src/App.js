@@ -12,23 +12,28 @@ const ingredients = [
 
 class App extends Component {
   state = {
-    ingredients: []
+    ingredients: [
+        {name: 'Meat', count: 0},
+        {name: 'Cheese', count: 0},
+    ]
   };
 
     render() {
-
         return (
             <Fragment>
                 <div className="burgerAppHeader">
                     <h1>my burger app</h1>
                 </div>
                 <div className="burgerAppBlock">
-                    <Ingredients/>
+                    <Ingredients
+                        ingredientsInfo={this.state.ingredients}
+                    />
                     <Burger/>
                 </div>
             </Fragment>
         );
     }
+
 }
 
 export default App;

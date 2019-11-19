@@ -1,10 +1,15 @@
 import React from 'react';
 import "./style.css";
 
-const Ingredient = () => {
+const Ingredient = ({onClick, ingredientTitle, ingredientCount}) => {
     return (
-        <div>
-            
+        <div className="ingredientListItem">
+            <a href="#" className="ingredientAdd" onClick={onClick} >
+                <img src="#" alt="#" className="ingredientImg" />
+                <h5 className="ingredientTitle">{ingredientTitle}</h5>
+            </a>
+            <p className="ingredientCount">x{ingredientCount}</p>
+            {ingredientCount > 0 && <button onClick={onClick} className="ingredientBtn"> Удалить </button>}
         </div>
     );
 };
