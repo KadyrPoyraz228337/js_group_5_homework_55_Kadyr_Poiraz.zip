@@ -3,7 +3,7 @@ import "./style.css"
 
 const Salad = () => {
     return (
-        <div className="salad" />
+        <div className="Salad"></div>
     );
 };
 
