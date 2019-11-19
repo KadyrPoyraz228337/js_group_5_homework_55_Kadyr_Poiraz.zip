@@ -13,7 +13,8 @@ const ingredients = [
 class App extends Component {
   constructor(props) {
       super(props);
-      this.state = {
+      this.ingredientsLocal = {ingredients: JSON.parse(localStorage.getItem('Ingredients'))};
+      this.state = this.ingredientsLocal ? this.ingredientsLocal : {
           ingredients: [
               {name: 'Meat', count: 0},
               {name: 'Cheese', count: 0},
