@@ -14,14 +14,14 @@ class App extends Component {
   constructor(props) {
       super(props);
       this.ingredientsLocal = {ingredients: JSON.parse(localStorage.getItem('Ingredients'))};
-      this.state = this.ingredientsLocal ? this.ingredientsLocal : {
+      this.state = localStorage.getItem('Ingredients') ? this.ingredientsLocal : {
           ingredients: [
               {name: 'Meat', count: 0},
               {name: 'Cheese', count: 0},
               {name: 'Salad', count: 0},
               {name: 'Bacon', count: 0},
           ]
-      };
+      }
   }
 
     render() {
