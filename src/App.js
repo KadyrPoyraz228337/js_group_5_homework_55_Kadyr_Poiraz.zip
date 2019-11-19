@@ -51,6 +51,7 @@ class App extends Component {
 
         ingredients[index] = ingredient;
 
+        localStorage.setItem('Ingredients', JSON.stringify(ingredients));
         this.setState({ingredients});
     };
 
@@ -63,6 +64,7 @@ class App extends Component {
 
         ingredients[index] = ingredient;
 
+        localStorage.setItem('Ingredients', JSON.stringify(ingredients));
         this.setState({ingredients});
     }
 
