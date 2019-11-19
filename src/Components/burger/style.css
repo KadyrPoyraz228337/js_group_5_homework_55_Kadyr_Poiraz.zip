@@ -86,14 +86,6 @@
     box-shadow: inset 1px 3px #c9c9c9;
 }
 
-.Meat {
-    width: 80%;
-    height: 8%;
-    background: linear-gradient(#7f3608, #702e05);
-    margin: 2% auto;
-    border-radius: 15px;
-}
-
 .Cheese {
     width: 90%;
     height: 4.5%;
